@@ -10,3 +10,4 @@ def crear_grafica_lineas(df):
                       yaxis_title='Megavatios (MW)')
     return fig
 
+
