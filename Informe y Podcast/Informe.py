@@ -4,7 +4,7 @@ st.set_page_config(page_title="Informe", page_icon=":libro_icon:")
 st.title("Luces, cámara, ¡energía!")
 st.write("Bienvenidos a la gran carrera energética de Cuba, donde competirán los portadores de energía más rápidos del país por llevar electricidad a los hogares cubanos.")
 
-st.write("En el carril 1 tenemos al fuerte petróleo, que en 2021 alcanzó una producción de 2.433 millones de toneladas, aunque viene decayendo desde 2020.")            
+st.write("En el carril 1 tenemos al fuerte petróleo, que en 2021 alcanzó una producción de 2.433 millones de toneladas, aunque viene decayendo desde 2020.")
 
 st.write("En el carril 2 se ubica el veloz gas natural que en ese año logró 843,5 millones de metros cúbicos, aún lejos de su récord de 970 millones en 2018.")
 
