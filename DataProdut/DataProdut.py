@@ -11,16 +11,16 @@ st.set_page_config(page_title="La Energía",\
                    )
 st.title("La Energía")
 
-#db = pd.read_json(os.path.join(os.path.dirname(__file__), '..', 'base de datos.json')).transpose().reset_index()
-#db.rename(columns={'index': 'Día'}, inplace=True)
-#db['Día'] = db['Día'].astype(str).str.split().str[0]
-#st.write(db)
+db = pd.read_json(os.path.join(os.path.dirname(__file__), '..', 'base de datos.json')).transpose().reset_index()
+db.rename(columns={'index': 'Día'}, inplace=True)
+db['Día'] = db['Día'].astype(str).str.split().str[0]
+st.write(db)
 
-db=pd.read_json(os.path.join(os.path.dirname(__file__), '..', 'base de datos.json'))
-db=db.transpose() # Transponer el dataframe
-db = db.drop('Info', axis=1)
+#db=pd.read_json(os.path.join(os.path.dirname(__file__), '..', 'base de datos.json'))
+#db=db.transpose() # Transponer el dataframe
+#db = db.drop('Info', axis=1)
 
-print(db.columns)
+#print(db.columns)
 
 fig = go.Figure()
 fig.add_trace(go.Scatter(x = db["Día"], y = db['MW disponibles'], name = 'MW disponibles'))
