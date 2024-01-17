@@ -9,4 +9,4 @@ def cargar_datos(filename):
     df.rename(columns={'index': 'Fecha'}, inplace=True)
     df['Fecha'] = pd.to_datetime(df['Fecha'])
     return df
-breakpoint()
+

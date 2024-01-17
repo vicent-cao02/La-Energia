@@ -1,4 +1,4 @@
-from plotly import graph_objects as go
+from plotly import graph_objects as go 
 
 
 def crear_grafica_lineas(df):
@@ -10,14 +10,3 @@ def crear_grafica_lineas(df):
                       yaxis_title='Megavatios (MW)')
     return fig
 
-
-def crear_grafica_barras(df):                
-    fig_b = go.Figure()
-    fig_b.add_trace(go.Bar(x=df[thermoelectric], y=df[f_s], name='Fuera de servicio', marker_color='blue'))
-    fig_b.add_trace(go.Bar(x=df[thermoelectric], y=df[m], name='En mantenimiento', marker_color='red'))
-    fig_b.update_layout(
-    title='Frecuencias de las termoeléctricas por estado',
-    xaxis_title='Nombres de las termoeléctricas',
-    yaxis_title='Frecuencia'
-    )
-    fig_b.update_layout(barmode='group')

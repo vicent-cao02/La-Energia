@@ -45,5 +45,5 @@ for i in thermoelectric:
                 
 # Frecuencias de las termoeléctricas por estado
 st.subheader('Frecuencias de las termoeléctricas por estado')
-fig_b = crear_grafica_barras(db)
+fig_b = crear_grafica_barras()
 st.plotly_chart(fig_b)
