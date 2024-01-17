@@ -2,7 +2,7 @@ import streamlit as st
 
 st.set_page_config(page_title="Luces, cámara, ¡energía!", page_icon=":zap:")
 st.title("Luces, cámara, ¡energía!")
-st.image("energia-renovable.jpg")
+st.image("energia-renovable.jpg", width=300, caption="Mi imagen de ejemplo")
 st.write("Bienvenidos a la gran carrera energética de Cuba, donde competirán los portadores de energía más rápidos del país por llevar electricidad a los hogares cubanos.")
 
 st.write("En el carril 1 tenemos al fuerte petróleo, que en 2021 alcanzó una producción de 2.433 millones de toneladas, aunque viene decayendo desde 2020.")            
